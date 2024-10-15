@@ -1,0 +1,131 @@
+/* css reset */
+@import url(./reset.css);
+
+/* general styling */
+body {
+  min-height: 100%;
+  background-color: aquamarine;
+  background: url(../assets/image.png);
+  background-position: 0 900px;
+  animation-name: background;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes background {
+  from {
+    background-position: 0 900px;
+  }
+  to {
+    background-position: 0 1800px;
+  }
+}
+
+main {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 30%;
+  padding: 0.9em 0;
+  background-color: rgba(255, 166, 0, 0.418);
+}
+
+.heading {
+  padding: 0.3em;
+  text-align: center;
+  font-size: 2rem;
+}
+.heading h1 {
+  font-weight: 800;
+  padding: 0.6em 0;
+}
+.heading p {
+  font-style: italic;
+  font-size: 1.5rem;
+  padding: 0.5em 0;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  gap: 0.8em;
+  align-items: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label {
+  font-weight: 700;
+}
+input {
+  padding: 0.3em;
+  font-size: 1.5rem;
+  width: 80vw;
+  border: 3px black solid;
+  border-radius: 9px;
+  border: none;
+}
+input:valid {
+  border: 6px solid rgba(0, 128, 0, 0.74);
+}
+
+form button {
+  font-size: 1rem;
+  padding: 1em 3em;
+  font-weight: 800;
+  background: linear-gradient(to top, rgb(5, 201, 152), rgb(47, 47, 117));
+  color: white;
+  font-style: italic;
+  border: none;
+  border-radius: 990px;
+  box-shadow: 3px 8px 6px black;
+  transition: ease-out 0.9s;
+}
+form button:hover {
+  background: green;
+  color: black;
+}
+
+/* .............tablet|| screen medium........ */
+@media screen and (min-width: 950px) {
+  input {
+    width: 80vw;
+  }
+}
+
+/*................ large screen.............. */
+@media screen and (min-width: 1020px) {
+  body {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    min-width: 50%;
+    margin-top: 5vh;
+    padding: 1em 9em;
+  }
+  input {
+    width: 30vw;
+  }
+}
+
+/* ..........display lib section ...........*/
+#display-library {
+  display: flex;
+}
+.add-book {
+  padding: 0.9em;
+  margin-right: 5em;
+  border-radius: 9px;
+  border: none;
+  font-weight: 700;
+  background-color: green;
+  color: white;
+  transition: ease-out 0.9s;
+}
+.add-book:hover {
+  background-color: rgba(252, 252, 252, 0.514);
+  color: rgb(51, 49, 49);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>library</title>
+  </head>
+  <body>
+    <main>
+      <div class="heading">
+        <h1>Archive Books Here</h1>
+        <p>donate pdf... encourage reading in the society</p>
+      </div>
+
+      <section id="display-library">
+        <button class="add-book" onclick="backToForm()">donate a book</button>
+        <div>
+          <h1>List of available books</h1>
+        </div>
+        <div class="library"></div>
+      </section>
+
+      <!-- donate book form section -->
+
+      <form>
+        <div>
+          <label for="title">Book Title</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+        <div>
+          <label for="author">Authors' names</label>
+          <input type="text" id="author" name="author" required />
+        </div>
+        <div>
+          <label for="pages">number of pages</label>
+          <input type="number" name="pages" id="pages" required />
+        </div>
+        <!-- <div>
+          <label for="upload">upload pdf/epub</label>
+          <input type="file" name="uploaad" id="upload" required />
+        </div> -->
+
+        <button class="add" type="submit" onclick="submitBook()">
+          DONATE BOOK
+        </button>
+      </form>
+    </main>
+
+    <script src="./app.js">
+      document.querySelector("main").style.backgroundColor="red";
+    </script>
+  </body>
+</html>

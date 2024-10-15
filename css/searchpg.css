@@ -1,0 +1,102 @@
+/* css reset */
+@import url(./reset.css);
+
+/* general styling */
+body {
+  font-size: 1.5rem;
+  padding: 0.9em;
+  background: url(../assets/image.png);
+  background-position: center;
+  background-size: cover;
+  animation-name: background;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+
+  color: white;
+}
+@keyframes background {
+  from {
+    background-position: center;
+  }
+  to {
+    background-position: bottom;
+  }
+}
+
+main {
+  padding-top: 3vh;
+  background-color: rgba(218, 165, 32, 0.582);
+
+  min-height: 90vh;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 0.6em;
+  text-align: center;
+}
+article {
+  padding-bottom: 3em;
+  text-align: center;
+  padding: 0.5em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 80vw;
+  border: 3px solid;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+button {
+  font-size: 1.5rem;
+  padding: 0.5em 1.8em;
+  margin-left: 0.7em;
+  border-radius: 0.6em;
+  background: whitesmoke;
+  box-shadow: 3px 5px 9px black;
+  align-self: flex-start;
+}
+button:hover {
+  background: rgba(0, 128, 0, 0.493);
+  border: none;
+  color: white;
+  font-weight: 400;
+  text-shadow: 3px 3px black;
+  box-shadow: 10px 15px 9px black;
+}
+
+/* large screen ||tablet */
+@media screen and (min-width: 950px) {
+}
+
+/* larger screen ||pc ideal */
+@media screen and (min-width: 1010px) {
+  body {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main {
+    background-color: rgba(218, 165, 32, 0.582);
+    max-width: 60vw;
+    min-height: 90vh;
+    font-weight: 700;
+    padding: 5em;
+  }
+  article {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  input {
+    width: 70%;
+    border-radius: 9px;
+  }
+  button {
+    min-width: 20%;
+  }
+}
