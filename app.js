@@ -8,9 +8,9 @@ function displayBooks() {
   myLibrary.forEach(function (book) {
     const bookCard = document.createElement("div");
     bookCard.classList.add("book-card");
-    bookCard.innerHTML = `<section><h3>${book.title}</h3>
-    <p>author:${book.author}</p>
-    <p>pages:${book.pages}</p></section>`;
+    bookCard.innerHTML = `<section><h3><strong>${book.title}</strong></h3>
+    <p><i>author:</i>${book.author}</p>
+    <p><i>pages:</i>${book.pages}</p></section>`;
 
     librarydiv.appendChild(bookCard);
   });

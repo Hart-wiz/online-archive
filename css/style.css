@@ -23,7 +23,6 @@ body {
 main {
   display: block;
   font-size: 1.8rem;
-  margin-top: 30%;
   padding: 0.9em 0;
   background-color: rgba(255, 166, 0, 0.418);
 }
@@ -136,7 +135,7 @@ form .refresh {
   main {
     min-width: 50%;
     margin-top: 5vh;
-    padding: 1em 9em;
+    padding: 1em 5em;
   }
   input {
     width: 30vw;
@@ -162,10 +161,12 @@ form .refresh {
 }
 .book-card {
   display: flex;
+  min-width: 340px;
   flex-direction: column;
-  background-color: rgba(122, 90, 8, 0.692);
+  background-color: rgba(180, 132, 8, 0.692);
   padding: 0.9em;
   font-size: 1.5rem;
+  border-radius: 9px;
 }
 .add-book {
   padding: 0.9em;
