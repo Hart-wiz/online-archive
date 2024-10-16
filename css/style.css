@@ -47,7 +47,7 @@ form {
   flex-direction: column;
   gap: 0.8em;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 form div {
@@ -145,6 +145,9 @@ form .refresh {
   .lib-heading {
     display: flex;
     flex-direction: row;
+  }
+  form {
+    font-size: 2rem;
   }
 }
 
