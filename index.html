@@ -14,8 +14,8 @@
       </div>
 
       <section id="display-library">
-        <button class="add-book" onclick="backToForm()">donate a book</button>
-        <div>
+        <div class="lib-heading">
+          <button class="add-book" onclick="backToForm()">donate a book</button>
           <h1>List of available books</h1>
         </div>
         <div class="library"></div>
@@ -24,6 +24,9 @@
       <!-- donate book form section -->
 
       <form>
+        <button type="button" class="back" onclick="backToLibrary()">
+          back to library
+        </button>
         <div>
           <label for="title">Book Title</label>
           <input type="text" id="title" name="title" required />
@@ -41,9 +44,10 @@
           <input type="file" name="uploaad" id="upload" required />
         </div> -->
 
-        <button class="add" type="submit" onclick="submitBook()">
-          DONATE BOOK
-        </button>
+        <div class="btns">
+          <button class="add" type="submit">DONATE BOOK</button>
+          <button class="refresh" type="reset">refresh</button>
+        </div>
       </form>
     </main>
 
